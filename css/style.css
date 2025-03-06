@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 62.5%;
+}
+
 body{
     font-family: sans-serif;
     font-size: 16px;
@@ -35,7 +39,7 @@ body{
     letter-spacing: 2px;
 }
 
-.headerButton:hover{
+.header > Button:hover{
     cursor: pointer;
 }
 
@@ -49,8 +53,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    opacity: 0;
-    transition: 0.8s all;
+    visibility: hidden;
 }
 
 .mainNavigationList {
@@ -81,7 +84,7 @@ body{
     object-fit: cover;
 }
 
-.collections{
+#collections{
     width: 100%;
     padding: 40px;
 }
@@ -113,7 +116,7 @@ body{
     object-fit: cover;
 }
 
-.info {
+#info {
     padding: 40px;
     display: flex;
     gap: 40px;
@@ -132,17 +135,16 @@ body{
 
 footer {
     background: black;
-    display: flex;
-    gap: 1500px;
-}
-
-footer > p {
+    gap: 2rem;
     color: white;
-    padding: 40px;
+    padding: 2rem;
 }
 
-.Name {
-    margin-top: 50px;
+#Name {
+    display: flex;
+    justify-content: left;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width:700px) {
@@ -152,4 +154,63 @@ footer > p {
     .headerTitle {
         font-size: 380%;
     }
+}
+
+#section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    font-family: sans-serif;
+    background: #F6F0F0;
+}
+
+form{
+    width: 100rem;
+    min-height: 20rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 4rem;
+    font-size: 3rem;
+    gap: 2rem;
+    border-radius: 5px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    border-bottom: 2px solid #E3CAA5;
+}
+
+input{
+    display: block;
+    width: 100%;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border: 1px solid black;
+}
+
+textarea{
+    height: 10ch;
+    width: 100%;
+    font-size: 1.6rem;
+    border: 1px solid black;
+    font-family: sans-serif;
+    padding: 1rem 2rem;
+    resize: none;
+}
+
+.submit{
+    background: white;
+    font-size: 1.6rem;
+    border: none;
+}
+
+.submit:hover{
+    cursor: pointer;
 }

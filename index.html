@@ -17,23 +17,17 @@
             <li class="mainNavigationListItem">
                <a href="">Home</a> 
             </li>
-            <li class="mainNavigationListItem">
-               <a href="">Collection #1</a> 
+            <li id="collection1" class="mainNavigationListItem">
+               <a  href="#collections">Collections</a> 
             </li>
-            <li class="mainNavigationListItem">
-                <a href="">Collection #2</a>  
+            <li id="collection2" class="mainNavigationListItem">
+                <a href="#info">Information</a>  
             </li>
-            <li class="mainNavigationListItem">
-                <a href="">Collection #3</a>
+            <li id="collection3" class="mainNavigationListItem">
+                <a href="#section">Form</a>
             </li>
-            <li class="mainNavigationListItem">
-               <a href=""> Collection #4</a>
-            </li>
-            <li class="mainNavigationListItem">
-               <a href="">Collection #5</a> 
-            </li>
-            <li class="mainNavigationListItem">
-               <a href=""> Collection #6</a>
+            <li id="collection4" class="mainNavigationListItem">
+               <a href="#Name"> Contact</a>
             </li>
         </ul>
     </nav>
@@ -41,7 +35,7 @@
     <figure class="bigFigure">
         <img src="img/cinema.webp" alt="cinema">
     </figure>
-    <section class="collections">
+    <section id="collections">
         <h2 class="collectionsTitle">collections</h2>
         <ul class="collectionsList">
             <li class="collectionsListItem">
@@ -64,7 +58,7 @@
             </li>
         </ul>
     </section>
-    <section class="info">
+    <section id="info">
         <div class="block">
             <h2 class="infoTitle">Why</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cum, reprehenderit cupiditate cumque necessitatibus quo! Molestias quasi doloremque dolorem quaerat. Quis quisquam voluptatibus at veniam. Aut dolorem dolores non inventore?
@@ -82,16 +76,25 @@
             Porro vero optio dolor corrupti impedit. Animi, quis ea beatae suscipit repellat asperiores ducimus. Repudiandae dolorem quos officia impedit, quae, earum aperiam quis obcaecati iure, doloribus provident eveniet placeat animi?</p>
         </div>
     </section>
+    <section id="section">
+        <form action="">
+            <div>
+                <label for="naam">Naam</label>
+                <input id="naam" type="text">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input id="email" type="text">
+            </div>
+            <div>
+                <label for="vraag">Vraag / opmerking</label>
+                <textarea id="vraag" class="bigText"></textarea>
+            </div>
+            <input class="submit" type="submit" value="Verzenden">
+           </form>
+    </section>
     <footer>
-        <p>      Home 
-            <br> Collections #1 
-            <br> Collections #2 
-            <br> Collections #3 
-            <br> Collections #4 
-            <br> Collections #5 
-            <br> Collections #6
-        </p>
-        <p class="Name">
+        <p id="Name">
             Casey Egging
         </p>
     </footer>
@@ -99,5 +102,5 @@
     
 </body>
 
-<script src="js/main,js"></script>
+<script src="js/main.js"></script>
 </html>
